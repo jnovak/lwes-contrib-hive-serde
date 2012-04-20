@@ -28,9 +28,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>hadoop</groupId>
+            <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-core</artifactId>
-            <version>0.19.2</version>
+            <version>0.20.2</version>
         </dependency>
         <dependency>
             <groupId>commons-logging</groupId>
@@ -54,39 +54,30 @@
         <dependency>
             <groupId>org.lwes</groupId>
             <artifactId>lwes-java</artifactId>
-            <version>0.2.0</version>
+            <version>0.2.4</version>
         </dependency>
         <dependency>
             <groupId>org.lwes</groupId>
-            <artifactId>journaller-java</artifactId>
-            <version>0.0.6</version>
+            <artifactId>lwes-journaller-java</artifactId>
+            <version>1.0.3-SNAPSHOT</version><!-- jnovak: until 1.0.3 is released! -->
         </dependency>
         <dependency>
-            <groupId>hive</groupId>
+            <groupId>org.apache.hive</groupId>
             <artifactId>hive-serde</artifactId>
-            <version>0.6.0_trunk</version>
+            <version>0.8.1</version>
         </dependency>
          <dependency>
-            <groupId>hive</groupId>
+            <groupId>org.apache.hive</groupId>
             <artifactId>hive-exec</artifactId>
-            <version>0.6.0_trunk</version>
+            <version>0.8.1</version>
         </dependency>
+
+        <!-- work around "[WARNING] The POM for javax.jdo:jdo2-api:jar:2.3-ec is missing, no dependency information available" -->
+        <dependency>
+          <groupId>javax.jdo</groupId>
+          <artifactId>jdo2-api</artifactId>
+          <version>2.3-20090302111651</version>
+        </dependency>
+
     </dependencies>
 </project>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
